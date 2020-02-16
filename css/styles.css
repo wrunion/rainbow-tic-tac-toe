@@ -5,17 +5,19 @@ body {
 #main {
   font-family: 'Antic Didone', serif;
   display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
 }
 
 #board {
-  width: 200px;
-  height: 200px;
+  /* width: 200px;
+  height: 200px; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 5px;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .grid-item {
@@ -37,9 +39,17 @@ h1 {
 }
 
 .player-div {
+  display: flex;
   border: 1px solid lightgrey;
   padding: 2em;
-  margin-top: 3em;
+  /* margin-top: 3em; */
+}
+
+#players-container {
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+  /* height: 200px; */
 }
 
 /* .players {
