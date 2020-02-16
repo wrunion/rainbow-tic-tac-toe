@@ -4,21 +4,23 @@
 #board {
   width: 200px;
   height: 200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 5px;
-  margin: auto;
   padding-top: 50px;
 }
 
 .grid-item {
   width: 4em;
   height: 4em;
-  /* border: 1px rgb(143, 143, 143) solid; */
   background-color: darkslategrey;
   text-align: center;
   color: rgb(228, 226, 226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* #main {
