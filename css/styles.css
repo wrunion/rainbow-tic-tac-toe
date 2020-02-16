@@ -17,23 +17,71 @@
   height: 4em;
   background-color: darkslategrey;
   text-align: center;
-  color: rgb(228, 226, 226);
+  /* color: rgb(228, 226, 226); */
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* #main {
-  display: flex; */
-  /* justify-content: center;
-  align-items: center;
-  justify-items: center; */
-/* } */
-
-
 h1 {
   margin: 2em;
   font-size: 28px;
   text-align: center;
-  /* color: darkslategrey; */
 }
+
+/* RAINBOW COLOR SCHEME BOARD BELOW */
+/* (colors from Semantic UI) */
+
+/* #one {
+  background-color: #B03060;
+}
+
+#two {
+  background-color: #FE9A76;
+}
+
+#three {
+  background-color: #FFD700;
+}
+
+#four {
+  background-color: #016936;
+}
+
+#five {
+  background-color: #008080;
+}
+
+#six {
+  background-color: #0E6EB8;
+}
+
+#seven {
+  background-color: #EE82EE;
+}
+
+#eight {
+  background-color: #B413EC;
+}
+
+#nine {
+  background-color: #FF1493;
+} */
+/* 
+Colors from semantic:
+@primaryColor   : @pink;
+@secondaryColor : @grey;
+@red            : #B03060;
+@orange         : #FE9A76;
+@yellow         : #FFD700;
+@olive          : #32CD32;
+@green          : #016936;
+@teal           : #008080;
+@blue           : #0E6EB8;
+@violet         : #EE82EE;
+@purple         : #B413EC;
+@pink           : #FF1493;
+@brown          : #A52A2A;
+@grey           : #A0A0A0;
+@black          : #000000; */
