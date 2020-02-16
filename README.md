@@ -1,25 +1,41 @@
-# Epicodus Boilerplate
+# Epicodus Tic Tac Toe
 
-#### _An HTML template that includes Bootstrap and jQuery CDN links, 1.28.2020_
+#### _A responsive tic tac toe game, built with flexbox and css grid. 2.16.2020_
 
-#### By _**Winter A. Runion**_
+#### By **Kent McKinney and Winter A. Runion**
 
 ## Description
-_Epicodus intro student projects all use the same file tree and technology (Bootstrap and jQuery), so here they are, all linked together in one place for your convenience._ 
 
-## Instructions
+_A web app that allows users to play tic tac toe against an opponent, or the computer. If the user choses to play against the computer, they have the option to play on "easy" or "hard" mode._
 
-1. Push the green "Use This Template" button, create your own Github repo from this one, and clone/download it to your machine.
 
-2. Do your coding thing!
+### Specs
 
-3. Delete this README and use "README-template.md" to create your own.
+//To do
+<!-- | Spec | Input | Output |
+| :-------------     | :------------- | :------------- |
+| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
+| **Program Gathers User Input** | User input: "pants" | Output: "pants" |
+| **Program Removes Spaces from User Input**| User Input: "pants pants" | Output: "pantspants" |
+| **Program Removes Punctuation from User Input**| Input: "p#an^t@s  /p(ant%s" | Output: "pantspants" |
+| **Program Assigns Characters Numeric Values** | Input: "pants" | Output: "3 1 1 1 1" |
+| **Program Sums Character Values**| Input: "3 1 1 1 1" | Page Displays: 7 | -->
 
-4. Enjoy not having to recreate this boilerplate for every single project you do!
+## Setup/Installation Requirements
+
 
 ## Known Bugs
+* No known bugs at this time.
 
-None known. Contact me if you have issues: winterrunion@gmail.com
+## Technologies Used
 
-#### License
-This software is licensed under the MIT license.
+
+## Support and contact details
+
+
+
+### License
+
+*{This software is licensed under the MIT license}*
+
+Copyright (c) 2020 **_{Kent P. McKinney, Winter A. Runion}_**
