@@ -49,20 +49,12 @@ $(document).ready(function() {
       player = 1;
     }
     
-    console.log(board);
-     
+    // Check for winner; return win message if true;
     winCondition(board);
     if (winner) {
       $("#result-div").append(`${winner} wins!`);
     }
    
-    // boardCounter ++;
-    // let winner = winCondition(board); 
-    // if (winner) {
-    //   console.log(`${winner} wins!`);
-    // } else if ((boardCounter === 9) && (winner == false)) {
-    //   console.log(`You have a stalemate.`);
-    // }
     // Toggle players
     $("#player1").toggleClass('active-player');
     $("#player2").toggleClass('active-player');
