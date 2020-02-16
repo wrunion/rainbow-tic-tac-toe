@@ -1,6 +1,12 @@
-#main {
+body {
   font-family: 'Antic Didone', serif;
 }
+
+#main {
+  font-family: 'Antic Didone', serif;
+  display: flex;
+}
+
 #board {
   width: 200px;
   height: 200px;
@@ -29,6 +35,33 @@ h1 {
   font-size: 28px;
   text-align: center;
 }
+
+.player-div {
+  border: 1px solid lightgrey;
+  padding: 2em;
+  margin-top: 3em;
+}
+
+/* .players {
+  display:flex;
+  justify-content: space-between
+} */
+
+.active-player {
+  background-color: black;
+  color: white;
+}
+
+/* 
+#player1 {
+  position: relative;
+  float: left;
+}
+
+#player2 {
+  position: relative;
+  float: right;
+} */
 
 /* RAINBOW COLOR SCHEME BOARD BELOW */
 /* (colors from Semantic UI) */
