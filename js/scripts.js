@@ -1,5 +1,7 @@
 // Business Logic --------------
 
+let boardCounter = 0;
+
 const board = {
   one: "",
   two: "",
@@ -12,8 +14,9 @@ const board = {
   nine: ""
 }
 
+let winner = "";
+
 function winCondition(board) {
-  let winner = "";
   if ((board.one === board.two) && (board.two === board.three)) { winner = board.one; }
   if ((board.four === board.five) && (board.five === board.six)) { winner = board.four; }
   if ((board.seven === board.eight) && (board.eight === board.nine)) { winner = board.seven; }
@@ -22,11 +25,6 @@ function winCondition(board) {
   if ((board.three === board.six) && (board.six === board.nine)) { winner = board.three; }
   if ((board.one === board.five) && (board.five === board.nine)) { winner = board.one; }
   if ((board.three === board.five) && (board.five === board.seven)) { winner = board.three; }
-  
-  if (winner) {
-    console.log(`${winner} wins!`);
-    return winner;
-  }
 }
 
 // Player 1 = X; Player 2 = O;
@@ -37,7 +35,7 @@ $(document).ready(function() {
   $("#player1").toggleClass('active-player');
 
   $(".square").click(function(e) {
-        //console.log(`You have clicked square number ${this.id}`);
+    if (winner) return 
     $(this).css('background-color', 'green');
     let clickedItem = this.id;    
     
@@ -53,9 +51,18 @@ $(document).ready(function() {
     
     console.log(board);
      
-    
-
-    winCondition(board); 
+    winCondition(board);
+    if (winner) {
+      $("#result-div").append(`${winner} wins!`);
+    }
+   
+    // boardCounter ++;
+    // let winner = winCondition(board); 
+    // if (winner) {
+    //   console.log(`${winner} wins!`);
+    // } else if ((boardCounter === 9) && (winner == false)) {
+    //   console.log(`You have a stalemate.`);
+    // }
     // Toggle players
     $("#player1").toggleClass('active-player');
     $("#player2").toggleClass('active-player');
