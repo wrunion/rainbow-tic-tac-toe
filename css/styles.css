@@ -1,5 +1,9 @@
-body {
+body, #header {
   font-family: 'Antic Didone', serif;
+}
+
+#header {
+  margin-top: 2em;
 }
 
 #main {
@@ -8,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 50px;
 }
 
 #player1 {
@@ -27,14 +32,10 @@ body {
   padding: 3em;
 }
 
-#board:nth-child(1) {
-  border-radius: 10px 0 0 0;
-}
-
 .grid-item {
-  width: 5em;
-  height: 5em;
-  background-color: darkslategrey;
+  width: 6em;
+  height: 6em;
+  /* background-color: darkslategrey; */
   text-align: center;
   /* color: rgb(228, 226, 226); */
   color: white;
@@ -70,58 +71,82 @@ h1 {
   color: white;
 }
 
-/* RAINBOW COLOR SCHEME BOARD BELOW */
+/* RAINBOW COLOR SCHEME */
 /* (colors from Semantic UI) */
 
+:root {
+  --red: #db2828;
+  --orange: #f2711c;
+  --yellow: #fbbd08;
+  --olive: #b5cc18;
+  --green: #21ba45;
+  --teal: #00b5ad;
+  --blue: #2185d0;
+  --violet: #6435c9;
+  --purple: #a333c8;
+  --pink: #e03997;
+  --brown: #a5673f;
+  --grey: #767676;
+  --black: #1b1c1d;
+/* Color Wheel  */
+  --winered: #993333;
+  --fire-engine-red: #ff3333;
+  --orange-peach: #ff6633;
+  --yellow-orange: #ffcc33;
+  --light-yellow: #ffff66;
+  --light-lime: #cccc33;
+  --green-apple: #669933;
+  --blue-sky: #3399cc;
+  --dusky-sky: #336699;
+  --violet2: #333399;
+  --purple2: #663399;
+ }
+
 #one {
-  background-color: #B03060;
+  background-color: var(--violet);
 }
-
 #two {
-  background-color: #FE9A76;
+  background-color: var(--purple);
 }
-
 #three {
-  background-color: #FFD700;
+  background-color: var(--red);
 }
 
 #four {
-  background-color: #016936;
+  background-color: var(--blue);
 }
 
 #five {
-  background-color: #008080;
+  background-color: var(--green);
+  background-color: var(--olive);
+  /* background-color: var(--blue); */
 }
 
 #six {
-  background-color: #0E6EB8;
+  background-color: var(--yellow);
 }
-
 #seven {
-  background-color: #EE82EE;
+  background-color: var(--teal);
 }
-
 #eight {
-  background-color: #B413EC;
+  background-color: var(--olive);
+  background-color: var(--green);
 }
 
 #nine {
-  background-color: #FF1493;
-} 
-/* 
-Colors from semantic:
-@primaryColor   : @pink;
-@secondaryColor : @grey;
-@red            : #B03060;
-@orange         : #FE9A76;
-@yellow         : #FFD700;
-@olive          : #32CD32;
-@green          : #016936;
-@teal           : #008080;
-@blue           : #0E6EB8;
-@violet         : #EE82EE;
-@purple         : #B413EC;
-@pink           : #FF1493;
-@brown          : #A52A2A;
-@grey           : #A0A0A0;
-@black          : #000000; */
+  background-color: var(--orange-peach);
+}
+
+
+/*
+HOW TO MANUALLY SET COLORS IN CSS: 
+
+// TO SET:
+  :root {
+  --blue: #00008B;
+}
+
+//TO USE: 
+color: var(--blue)
+
+SRC = https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
