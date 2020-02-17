@@ -41,7 +41,7 @@ $(document).ready(function() {
     if (player) {
       $(this).text("X");
       if (this.id === "one") {
-        $(this).addClass(".one-checked");
+        $(this).addClass(".green");
       }
       board[clickedItem] = "X";
       player = 0;

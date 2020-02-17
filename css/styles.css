@@ -1,7 +1,7 @@
 body, #header {
   font-family: 'Antic Didone', serif;
   /* background-color: var(--off-white); */
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
 }
 
 #header {
@@ -139,6 +139,10 @@ h1 {
 .one-checked {
   color: white;
   background-color: var(--purple);
+}
+
+.one {
+  background-color: green;
 }
 
 #two {
