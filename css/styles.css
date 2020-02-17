@@ -74,6 +74,10 @@ h1 {
   flex-direction: column;
 }
 
+.hidden-start {
+  display: none;
+}
+
 
 /* TOGGLE ACTIVE PLAYER CLASS REFERENCED IN JS */
 .active-player {

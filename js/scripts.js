@@ -2,7 +2,7 @@
 
 let boardCounter = 0;
 
-const board = {
+let board = {
   one: "",
   two: "",
   three: "",
