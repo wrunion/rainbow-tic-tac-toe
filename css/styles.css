@@ -4,25 +4,36 @@ body {
 
 #main {
   font-family: 'Antic Didone', serif;
+  /* border: 1px lightgrey solid; */
   display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+#player1 {
+  order: 1;
+}
+
+#player2 {
+  order: 3;
 }
 
 #board {
-  /* width: 200px;
-  height: 200px; */
-  margin: 0 auto;
+  order: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 5px;
-  /* padding-top: 50px; */
+  padding: 3em;
+}
+
+#board:nth-child(1) {
+  border-radius: 10px 0 0 0;
 }
 
 .grid-item {
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 5em;
   background-color: darkslategrey;
   text-align: center;
   /* color: rgb(228, 226, 226); */
@@ -52,31 +63,17 @@ h1 {
   /* height: 200px; */
 }
 
-/* .players {
-  display:flex;
-  justify-content: space-between
-} */
 
+/* TOGGLE CLASS REFERENCED IN JS */
 .active-player {
   background-color: black;
   color: white;
 }
 
-/* 
-#player1 {
-  position: relative;
-  float: left;
-}
-
-#player2 {
-  position: relative;
-  float: right;
-} */
-
 /* RAINBOW COLOR SCHEME BOARD BELOW */
 /* (colors from Semantic UI) */
 
-/* #one {
+#one {
   background-color: #B03060;
 }
 
@@ -110,7 +107,7 @@ h1 {
 
 #nine {
   background-color: #FF1493;
-} */
+} 
 /* 
 Colors from semantic:
 @primaryColor   : @pink;
