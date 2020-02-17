@@ -40,6 +40,9 @@ $(document).ready(function() {
     
     if (player) {
       $(this).text("X");
+      if (this.id === "one") {
+        $(this).addClass(".one-checked");
+      }
       board[clickedItem] = "X";
       player = 0;
     } else {
