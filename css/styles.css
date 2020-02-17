@@ -75,21 +75,22 @@ h1 {
 }
 
 
-/* TOGGLE CLASS REFERENCED IN JS */
+/* TOGGLE ACTIVE PLAYER CLASS REFERENCED IN JS */
 .active-player {
-  background-color: #43464B;
-  color: white;
+  /* border: 3px var(--blue) solid; */
+  color: black;
+  box-shadow: 0 0 0 3px var(--blue) inset;
 }
 
-.active-player1 {
+/* .active-player1 {
   background-color: var(--blue);
   color: white;
-}
+} */
 
-.active-player2 {
+/* .active-player2 {
   background-color: var(--purple);
   color: white;
-}
+} */
 
 /* Styles for X's and O's on game board */
 .square {
