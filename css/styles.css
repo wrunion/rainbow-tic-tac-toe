@@ -14,8 +14,7 @@ body, #header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 50px;
-  
+  margin: 50px; 
 }
 
 #player1 {
@@ -53,7 +52,7 @@ body, #header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 
 h1 {
@@ -78,9 +77,24 @@ h1 {
 
 /* TOGGLE CLASS REFERENCED IN JS */
 .active-player {
-  background-color: black;
+  background-color: #43464B;
   color: white;
 }
+
+.active-player1 {
+  background-color: var(--blue);
+  color: white;
+}
+
+.active-player2 {
+  background-color: var(--purple);
+  color: white;
+}
+
+/* Styles for X's and O's on game board */
+.square {
+}
+
 
 /* RAINBOW COLOR SCHEME */
 /* (colors from Semantic UI) */
@@ -204,8 +218,8 @@ h1 {
 
 
 /* UNCOMMENT TO SEE THE GRID IN FULL RAINBOW */
-
-/*#one {
+/* 
+#one {
   background-color: var(--purple);
   border: 3px var(--purple) solid;
 }
@@ -234,6 +248,7 @@ h1 {
 }
 
 #five {
+  color: white;
   background-color: var(--olive);
 }
 

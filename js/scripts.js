@@ -32,11 +32,10 @@ let player = 0;
 
 // UI logic ---------------------
 $(document).ready(function() {
-  $("#player1").toggleClass('active-player');
+  $("#player1").toggleClass('active-player1');
 
   $(".square").click(function(e) {
     if (winner) return 
-    $(this).css('background-color', 'green');
     let clickedItem = this.id;    
     
     if (player) {
@@ -56,8 +55,8 @@ $(document).ready(function() {
     }
    
     // Toggle players
-    $("#player1").toggleClass('active-player');
-    $("#player2").toggleClass('active-player');
+    $("#player1").toggleClass('active-player1');
+    $("#player2").toggleClass('active-player2');
     });
 
  
