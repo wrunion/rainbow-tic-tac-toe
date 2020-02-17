@@ -1,7 +1,6 @@
 body, #header {
   font-family: 'Antic Didone', serif;
-  background-color: var(--off-white);
-  background-color: #f9f9f9;
+  /* background-color: var(--off-white); */
   background-color: #f7f7f7;
 }
 
@@ -35,6 +34,15 @@ body, #header {
   gap: 5px;
 }
 
+.div-center {
+  text-align: center;
+}
+
+#result-div {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .grid-item {
   width: 6em;
   height: 6em;
@@ -58,14 +66,13 @@ h1 {
   display: flex;
   border: 1px solid lightgrey;
   padding: 2em;
-  /* margin-top: 3em; */
+  border-radius: 3px;
 }
 
 #players-container {
   display: flex;
   align-items: space-between;
   flex-direction: column;
-  /* height: 200px; */
 }
 
 
@@ -79,7 +86,7 @@ h1 {
 /* (colors from Semantic UI) */
 
 :root {
-  --red: #db2828;
+  --red: #d72631;;
   --orange: #f2711c;
   --yellow: #fbbd08;
   --olive: #b5cc18;
@@ -109,21 +116,109 @@ h1 {
   --off-white: #fffff4;
  }
 
+
+#one {
+  color: var(--purple);
+  border: 3px var(--purple) solid;
+}
+.one-checked {
+  color: white;
+  background-color: var(--purple);
+}
+
+#two {
+  color: var(--violet);
+  border: 3px var(--violet) solid;
+}
+.two-checked {
+  color: white;
+  background-color: var(--violet);
+}
+
+#three {
+  color: var(--red);
+  border: 3px var(--red) solid;
+}
+.three-checked {
+  color: white;
+  background-color: var(--red);
+}
+
+#four {
+  color: var(--blue);
+  border: 3px var(--blue) solid;
+}
+.four-checked {
+  color: white;
+  background-color: var(--blue);
+}
+
+#five {
+  color: var(--olive);
+  border: 3px var(--olive) solid;
+}
+.five-checked {
+  color: white;
+  background-color: var(--olive);
+}
+
+#six {
+  color: var(--orange-peach);
+  border: 3px var(--orange-peach) solid;
+}
+.six-checked {
+  color: white;
+  background-color: var(--orange-peach);
+}
+
+#seven {
+  color: var(--teal);
+  border: 3px var(--teal) solid;
+}
+.seven-checked {
+  color: white;
+  background-color: var(--teal);
+}
+
+#eight {
+  color: var(--green);
+  border: 3px var(--green) solid;
+}
+.eight-checked {
+  color: white;
+  background-color: var(--green);
+}
+
+#nine {
+  color: var(--yellow);
+  border: 3px var(--yellow) solid;
+}
+.nine-cheked {
+  color: white;
+  background-color: var(--yellow);
+}
+
+
+
+
+
+
+/* UNCOMMENT TO SEE THE GRID IN FULL RAINBOW */
+
+/*#one {
+  background-color: var(--purple);
+  border: 3px var(--purple) solid;
+}
+.one-checked {
+  background-color: var(--purple);
+}
+
 #two {
   background-color: var(--violet);
   border: 3px var(--violet) solid;
 }
 .two-checked {
   background-color: var(--violet);
-}
-
-#one {
-  background-color: var(--purple);
-  border: 3px var(--purple) solid;
-}
-.one-checked {
-  background-color: var(--purple);
-
 }
 
 #three {
@@ -144,7 +239,6 @@ h1 {
 
 #nine {
   background-color: var(--yellow);
-  /* background-color: #ffcc33; */
 }
 #seven {
   background-color: var(--teal);
@@ -156,10 +250,10 @@ h1 {
 
 #six {
   background-color: var(--orange-peach);
-}
+} */
 
 
-/*
+/* NOTES 
 HOW TO MANUALLY SET COLORS IN CSS: 
 
 // TO SET:
@@ -170,4 +264,4 @@ HOW TO MANUALLY SET COLORS IN CSS:
 //TO USE: 
 color: var(--blue)
 
-SRC = https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+SRC = https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
