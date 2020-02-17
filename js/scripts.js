@@ -14,17 +14,15 @@ let board = {
   nine: ""
 }
 
-let winner = "";
-
 function winCondition(board) {
-  if ((board.one === board.two) && (board.two === board.three)) { winner = board.one; }
-  if ((board.four === board.five) && (board.five === board.six)) { winner = board.four; }
-  if ((board.seven === board.eight) && (board.eight === board.nine)) { winner = board.seven; }
-  if ((board.one === board.four) && (board.four === board.seven)) { winner = board.one; }
-  if ((board.two === board.five) && (board.five === board.eight)) { winner = board.two; }
-  if ((board.three === board.six) && (board.six === board.nine)) { winner = board.three; }
-  if ((board.one === board.five) && (board.five === board.nine)) { winner = board.one; }
-  if ((board.three === board.five) && (board.five === board.seven)) { winner = board.three; }
+  if ((board.one) && (board.one === board.two) && (board.two === board.three)) { return = board.one; }
+  if ((board.four) && (board.four === board.five) && (board.five === board.six)) { return = board.four; }
+  if ((board.seven) && (board.seven === board.eight) && (board.eight === board.nine)) { return = board.seven; }
+  if ((board.one) && (board.one === board.four) && (board.four === board.seven)) { return = board.one; }
+  if ((board.two) && (board.two === board.five) && (board.five === board.eight)) { return = board.two; }
+  if ((board.three) && (board.three === board.six) && (board.six === board.nine)) { return = board.three; }
+  if ((board.one) && (board.one === board.five) && (board.five === board.nine)) { return = board.one; }
+  if ((board.three) && (board.three === board.five) && (board.five === board.seven)) { return = board.three; }
 }
 
 // Player 1 = X; Player 2 = O;
