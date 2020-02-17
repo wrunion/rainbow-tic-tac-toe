@@ -1,5 +1,6 @@
 body, #header {
   font-family: 'Antic Didone', serif;
+  background-color: var(--off-white);
 }
 
 #header {
@@ -10,9 +11,10 @@ body, #header {
   font-family: 'Antic Didone', serif;
   /* border: 1px lightgrey solid; */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 50px;
+  
 }
 
 #player1 {
@@ -29,7 +31,6 @@ body, #header {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 5px;
-  padding: 3em;
 }
 
 .grid-item {
@@ -42,6 +43,7 @@ body, #header {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 3px;
 }
 
 h1 {
@@ -100,15 +102,33 @@ h1 {
   --dusky-sky: #336699;
   --violet2: #333399;
   --purple2: #663399;
+  /* Semantic BRIGHT  */
+  --bright-green: #32cd32;
+  --off-white: #fffff4;
  }
 
 #one {
   background-color: var(--violet);
+  border: 3px var(--violet) solid;
 }
+.one-checked {
+  background-color: var(--violet);
+}
+
 #two {
   background-color: var(--purple);
+  border: 3px var(--purple) solid;
 }
+.two-checked {
+  background-color: var(--purple);
+
+}
+
 #three {
+  background-color: var(--red);
+  border: 3px var(--red) solid;
+}
+.three-checked {
   background-color: var(--red);
 }
 
@@ -117,13 +137,12 @@ h1 {
 }
 
 #five {
-  background-color: var(--green);
   background-color: var(--olive);
-  /* background-color: var(--blue); */
 }
 
 #six {
   background-color: var(--yellow);
+  /* background-color: #ffcc33; */
 }
 #seven {
   background-color: var(--teal);
