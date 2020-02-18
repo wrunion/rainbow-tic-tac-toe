@@ -63,9 +63,9 @@ h1 {
 
 .player-div {
   display: flex;
-  border: 1px solid lightgrey;
   padding: 2em;
   border-radius: 3px;
+  box-shadow: 0 0 0 1px lightgrey inset;
 }
 
 #players-container {
@@ -84,7 +84,12 @@ h1 {
   /* border: 3px var(--blue) solid; */
   color: black;
   box-shadow: 0 0 0 3px var(--blue) inset;
+  /* border: 3px solid var(--blue); */
 }
+
+/* .inactive-player {
+  border: 1px solid lightgrey;
+} */
 
 /* .active-player1 {
   background-color: var(--blue);
