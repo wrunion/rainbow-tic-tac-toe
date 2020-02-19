@@ -42,6 +42,11 @@ body, #header {
   font-weight: bold;
 }
 
+#result-button {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
 .grid-item {
   width: 6em;
   height: 6em;

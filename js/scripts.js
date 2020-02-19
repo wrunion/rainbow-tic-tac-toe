@@ -1,6 +1,6 @@
 // Business Logic --------------
 
-let boardCounter = 0;
+let turnCounter = 0;
 
 let board = {
   one: "",
@@ -35,38 +35,51 @@ $(document).ready(function() {
 
   $(".square").click(function(e) {
     let winner = winCondition(board);
+    // Has someone already won? If so, do nothing.
+    // NOTE: WE ALSO NEED TO INCLUDE A 'CHECK FOR STALEMATE AND RETURN MESSAGE' LINE HERE
     if ((winner === "X") || (winner === "O")) return; 
-
-    // let clickedItem = this.id;    
-    
+  
+    // Has someone already played that square? If so, do nothing.
     let textVal = $(this).text();
-
     if ((textVal === "X") || (textVal === "O")) return;
 
+    // If the click is valid, 
+    // Use Vanilla JS to get the ID of the clicked square.
+    let clickedItemId = this.id;
+    // Check which player is active. Write their marker to the square, then toggle the player counter variable.
     if (player) {
         $(this).text("X");
-        board[this.id] = "X";
+        board[clickedItemId] = "X";
         player = 0;
     } else {
         $(this).text("O");
-        board[this.id] = "O";
+        board[clickedItemId] = "O";
         player = 1;
     }
-  
-    // Check for winner; return win message if true;
+    // Add one to turnCounter;
+    turnCounter += 1;
+    // Check for winner and/or stalemate; display message if true;
     winner = winCondition(board);
     if ((winner === "X") || (winner === "O")) {
-      $("#result-div").append(`${winner} wins!`);
+      $("#result-span").append(`${winner} wins!`);
+      $("#result-div").show();
+    } else if ((winner == false) && turnCounter === 9) {
+      $("#result-span").append(`Stalemate. Try again!`);
+      $("#result-div").show();
     }
-   
-    // Toggle players
+    // Toggle player classes
     $("#player1").toggleClass('active-player');
     $("#player2").toggleClass('active-player');
     });
 
+    $("#result-button").click(function() {
+      location.reload();
+    });
  
 }); 
 
 
-
-// ask about difference between let and const
+// Write some code to check for a stalemate. Something like: 
+// if ((turnCounter === 9) && (winCondition(board) === false)) {
+  
+// }
