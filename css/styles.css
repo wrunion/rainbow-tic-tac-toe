@@ -1,6 +1,5 @@
 body, #header {
   font-family: 'Antic Didone', serif;
-  /* background-color: var(--off-white); */
   background-color: #f9f9f9;
 }
 
@@ -10,7 +9,6 @@ body, #header {
 
 #main {
   font-family: 'Antic Didone', serif;
-  /* border: 1px lightgrey solid; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -50,14 +48,11 @@ body, #header {
 .grid-item {
   width: 6em;
   height: 6em;
-  /* background-color: darkslategrey; */
   text-align: center;
-  /* color: rgb(228, 226, 226); */
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-radius: 3px; */
 }
 
 h1 {
@@ -86,35 +81,11 @@ h1 {
 
 /* TOGGLE ACTIVE PLAYER CLASS REFERENCED IN JS */
 .active-player {
-  /* border: 3px var(--blue) solid; */
   color: black;
   box-shadow: 0 0 0 3px var(--blue) inset;
-  /* border: 3px solid var(--blue); */
 }
-
-/* .inactive-player {
-  border: 1px solid lightgrey;
-} */
-
-/* .active-player1 {
-  background-color: var(--blue);
-  color: white;
-} */
-
-/* .active-player2 {
-  background-color: var(--purple);
-  color: white;
-} */
-
-/* Styles for X's and O's on game board */
-.square {
-  
-}
-
 
 /* RAINBOW COLOR SCHEME */
-/* (colors from Semantic UI) */
-
 :root {
   --red: #d72631;;
   --orange: #f2711c;
@@ -141,11 +112,9 @@ h1 {
   --dusky-sky: #336699;
   --violet2: #333399;
   --purple2: #663399;
-  /* Semantic BRIGHT  */
   --bright-green: #32cd32;
   --off-white: #fffff4;
  }
-
 
 #one {
   color: var(--purple);
@@ -154,10 +123,6 @@ h1 {
 .one-checked {
   color: white;
   background-color: var(--purple);
-}
-
-.one {
-  background-color: green;
 }
 
 #two {
@@ -233,11 +198,7 @@ h1 {
 }
 
 
-
-
-
-
-/* UNCOMMENT TO SEE THE GRID IN FULL RAINBOW */
+/* UNCOMMENT TO SEE THE GRID WITH RAINBOW  FILL */
 /* 
 #one {
   background-color: var(--purple);
@@ -288,15 +249,14 @@ h1 {
 } */
 
 
-/* NOTES 
-HOW TO MANUALLY SET COLORS IN CSS: 
+/* NOTES: HOW TO MANUALLY SET COLORS IN CSS: 
 
-// TO SET:
+TO SET:
   :root {
   --blue: #00008B;
 }
 
-//TO USE: 
+TO USE: 
 color: var(--blue)
 
 SRC = https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
