@@ -31,6 +31,22 @@ body, #header {
   gap: 5px;
 }
 
+#board div:nth-child(1) {
+  border-radius: 5px 0 0 0;
+}
+
+#board div:nth-child(3) {
+  border-radius: 0 5px 0 0;
+}
+
+#board div:nth-child(7) {
+  border-radius: 0 0 0 5px;
+} 
+
+#board div:nth-child(9) {
+  border-radius: 0 0 5px 0;
+}
+
 .div-center {
   text-align: center;
 }
@@ -77,7 +93,6 @@ h1 {
 .hidden-start {
   display: none;
 }
-
 
 /* TOGGLE ACTIVE PLAYER CLASS REFERENCED IN JS */
 .active-player {
