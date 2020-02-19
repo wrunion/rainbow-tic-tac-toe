@@ -10,7 +10,7 @@ _A web app that allows two users to play tic tac toe._
 
 ### Instructions
 
-* View the app [here](https://wrunion.github.io/js-tic-tac-toe-e20/).
+* View the app [here](https://wrunion.github.io/rainbow-tic-tac-toe/)
 * Grab a friend.
 * Play the game!
 
@@ -24,7 +24,7 @@ _A web app that allows two users to play tic tac toe._
 
 ### Contact
 
-If you have questions or comments you can reach me at winterrunion@gmail.com.
+If you have questions or comments you can reach me at winterrunion@gmail.com
 
 ### License
 _This software is licensed under the MIT license._
