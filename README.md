@@ -1,41 +1,32 @@
-# Epicodus Tic Tac Toe
+# Rainbow Tic Tac Toe
 
-#### _A responsive tic tac toe game, built with flexbox and css grid. 2.16.2020_
+#### _A responsive tic tac toe game, built with Flexbox and CSS Grid. 2.16.2020_
 
-#### By **Kent McKinney and Winter A. Runion**
+#### By **Winter A. Runion and Kent P. McKinney**
 
 ## Description
 
-_A web app that allows users to play tic tac toe against an opponent, or the computer. If the user choses to play against the computer, they have the option to play on "easy" or "hard" mode._
+_A web app that allows two users to play tic tac toe._
 
+### Instructions
 
-### Specs
+* View the app [here](https://wrunion.github.io/js-tic-tac-toe-e20/).
+* Grab a friend.
+* Play the game!
 
-//To do
-<!-- | Spec | Input | Output |
-| :-------------     | :------------- | :------------- |
-| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
-| **Program Gathers User Input** | User input: "pants" | Output: "pants" |
-| **Program Removes Spaces from User Input**| User Input: "pants pants" | Output: "pantspants" |
-| **Program Removes Punctuation from User Input**| Input: "p#an^t@s  /p(ant%s" | Output: "pantspants" |
-| **Program Assigns Characters Numeric Values** | Input: "pants" | Output: "3 1 1 1 1" |
-| **Program Sums Character Values**| Input: "3 1 1 1 1" | Page Displays: 7 | -->
+### Technologies Used
+* HTML, CSS, JavaScript
+* jQuery
+* [Semantic UI](https://semantic-ui.com/)
 
-## Setup/Installation Requirements
+### Known Bugs
+* None 
 
+### Contact
 
-## Known Bugs
-* No known bugs at this time.
-
-## Technologies Used
-
-
-## Support and contact details
-
-
+If you have questions or comments you can reach me at winterrunion@gmail.com.
 
 ### License
+_This software is licensed under the MIT license._
 
-*{This software is licensed under the MIT license}*
-
-Copyright (c) 2020 **_{Kent P. McKinney, Winter A. Runion}_**
+_Copyright (c) 2020 **Winter A. Runion, Kent P. McKinney**_
