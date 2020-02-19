@@ -16,7 +16,8 @@ function Game() {
   this.board = new Board();
   this.turnCounter = 0;
   this.player = 0;
-  this.winCondition = function winCondition(board) {
+  this.winCondition = function winCondition() {
+    let board = this.board;
     if ((board.one) && (board.one === board.two) && (board.two === board.three)) { return board.one; }
     if ((board.four) && (board.four === board.five) && (board.five === board.six)) { return board.four; }
     if ((board.seven) && (board.seven === board.eight) && (board.eight === board.nine)) { return board.seven; }
@@ -29,23 +30,31 @@ function Game() {
   }
 }
 
-// function Player() {
-//   //know if X or O
-//   // know if it's their turn 
-//   isTurn = true;
+// function Player(playerSymbol, isTurn) {
+//     // this.playerSymbol = playerSymbol;
+//     // this.isTurn = isTurn;
+//     this.wins = 0;
+//     this.losses = 0;
 // }
 
+// function Computer() {
+
+// }
+
+// Create new instances of game and board each game
 const game = new Game();
 
-
-
+// ONLY create new instances of players ONCE - these instances should persist across multiple games, up until page refresh
+// let player1 = new Player("X", true);
+// let player2 = new Player("O", false);
+ 
 // UI Logic ----------------------
 $(document).ready(function() {
   $("#player1").toggleClass('active-player');
 
   $(".square").click(function(e) {
     // console.log(game.board.squares.one);
-    let winner = game.winCondition(game.board);
+    let winner = game.winCondition();
     // Has someone already won? If so, do nothing.
     if ((winner === "X") || (winner === "O")) return; 
   
@@ -69,11 +78,11 @@ $(document).ready(function() {
     // Add one to game.turnCounter;
     game.turnCounter += 1;
     // Check for winner and/or stalemate; display message if true;
-    winner = game.winCondition(game.board);
+    winner = game.winCondition();
     if ((winner === "X") || (winner === "O")) {
       $("#result-span").append(`${winner} wins!`);
       $("#result-div").show();
-    } else if ((winner == false) && game.turnCounter === 9) {
+    } else if ((winner === "") && (game.turnCounter === 9)) {
       $("#result-span").append(`Stalemate. Try again!`);
       $("#result-div").show();
     }
@@ -82,8 +91,13 @@ $(document).ready(function() {
     $("#player2").toggleClass('active-player');
     });
 
-    $("#result-button").click(function() {
-      location.reload();
+    $("#result-button").click(function(e) {
+      game.board = new Board();
+      game.turnCounter = 0;
+      game.player = 0;
+      $(".square").text("");
+      $("#result-div").hide();
+      $("#result-span").text("");
     });
  
 }); 
