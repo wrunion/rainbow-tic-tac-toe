@@ -24,7 +24,7 @@ _A web app that allows two users to play tic tac toe._
 
 ### Contact
 
-If you have questions or comments you can reach me at winterrunion@gmail.com
+If you have questions or comments you can reach me at winter@winterrunion.com
 
 ### License
 _This software is licensed under the MIT license._
