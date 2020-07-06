@@ -4,10 +4,13 @@
 
 #### By **Winter A. Runion and Kent P. McKinney**
 
+## Description 
+A tic-tac-toe game for two players.
+
 ## Demo
-Use the app online at [wrunion.github.io/rainbow-tic-tac-toe](https://wrunion.github.io/rainbow-tic-tac-toe/)
+Play online at [wrunion.github.io/rainbow-tic-tac-toe](https://wrunion.github.io/rainbow-tic-tac-toe/)
 <p align="center">
-<img src="images/demo-1.gif" />
+<img src="images/demo-1.gif" alt="demo of tic-tac-toe game" max-width="525px" />
 </p>  
 
 ### Technologies Used
