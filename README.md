@@ -4,15 +4,11 @@
 
 #### By **Winter A. Runion and Kent P. McKinney**
 
-## Description
-
-_A web app that allows two users to play tic tac toe._
-
-### Instructions
-
-* View the app [here](https://wrunion.github.io/rainbow-tic-tac-toe/)
-* Grab a friend.
-* Play the game!
+## Demo
+Use the app online at [wrunion.github.io/rainbow-tic-tac-toe](https://wrunion.github.io/rainbow-tic-tac-toe/)
+<p align="center">
+<img src="images/demo-1.gif" />
+</p>  
 
 ### Technologies Used
 * HTML, CSS, JavaScript
