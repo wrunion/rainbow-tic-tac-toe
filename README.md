@@ -10,7 +10,7 @@ A tic-tac-toe game for two players.
 ## Demo
 Play online at [wrunion.github.io/rainbow-tic-tac-toe](https://wrunion.github.io/rainbow-tic-tac-toe/)
 <p align="center">
-<img src="images/demo-1.gif" alt="demo of tic-tac-toe game" max-width="525px" />
+<img src="images/demo.gif" alt="demo of tic-tac-toe game" width="650px" />
 </p>  
 
 ### Technologies Used
